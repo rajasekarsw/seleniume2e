@@ -19,7 +19,7 @@ public class FBLogoutPage extends BaseClass{
 	@FindBy(xpath="//div[@aria-label='Account controls and settings']/span")
 	private WebElement profileButton;
 	
-	@FindBy(xpath="//span[text()='Log Outs']")
+	@FindBy(xpath="//span[text()='Log Out']")
 	private WebElement logout;
 	
 	
