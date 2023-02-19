@@ -33,11 +33,11 @@ public class LogoutFB extends BaseClass
 	@Test(priority=3)
 	public void verifyTitle()
 	{
-		Log.startTestcase("openFBLoginPage");
+		Log.startTestcase("openFBLogoutPage");
 		System.out.println(fbLogoutPage.getTitle());
 		Assert.assertTrue(fbLogoutPage.getTitle().toLowerCase().contains("facebook"));
 		
-		Log.startTestcase("openFBLoginPage");
+		Log.endTestcase("openFBLogoutPage");
 	}
 	
 	@Test(priority=4)
