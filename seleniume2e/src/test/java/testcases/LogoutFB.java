@@ -15,6 +15,7 @@ import org.testng.annotations.Test;
 import base.BaseClass;
 import pageobjects.FBLoginPage;
 import pageobjects.FBLogoutPage;
+import utility.Log;
 
 
 
@@ -32,8 +33,11 @@ public class LogoutFB extends BaseClass
 	@Test(priority=3)
 	public void verifyTitle()
 	{
+		Log.startTestcase("openFBLoginPage");
 		System.out.println(fbLogoutPage.getTitle());
 		Assert.assertTrue(fbLogoutPage.getTitle().toLowerCase().contains("facebook"));
+		
+		Log.startTestcase("openFBLoginPage");
 	}
 	
 	@Test(priority=4)
